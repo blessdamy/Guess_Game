@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main_div {
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://res.cloudinary.com/do3z5k6nk/image/upload/v1706096971/Guessing%20Game/Game2_bpzdnj.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 25px;
+}
+
+.div_heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.div_again {
+  width: max-content;
+  background-color: aqua;
+  color: black;
+  padding: 12px 16px;
+  font-size: 30px;
+  font-weight: 400;
+  border-radius: 8px;
+  font-family: monospace;
+}
+
+.div_again:hover {
+  color: rgb(69, 94, 204);
+}
+
+.div_number {
+  background-color: burlywood;
+  padding: 8px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: larger;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-shadow: 12px 12px 2px 1px rgba(180, 182, 180, 0.2);
+  transition: all 0.1s ease;
+}
+
+.div_number:hover {
+  padding: 10px;
+  background-color: aqua;
+  color: rgb(69, 94, 204);
+  font-weight: 600;
+  transition-delay: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+
+.div_guess {
+  margin-top: 25px;
+  text-align: center;
+  font-size: 65px;
+  color: brown;
+  font-family: "Black Ops One", system-ui;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 50px;
+}
+
+.div_line_container {
+  position: relative;
+}
+
+.div_line {
+  height: 10px;
+  background-color: black;
+  margin: 80px 0px;
+}
+
+.div_question {
+  position: absolute;
+  width: max-content;
+  padding: 28px 40px;
+  background-color: aqua;
+  font-size: 65px;
+  font-family: "Black Ops One", system-ui;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.select_and_check_container {
+  display: flex;
+  padding: 0px 100px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.select_and_check {
+  padding-left: 70px;
+}
+
+#guess_num {
+  font-family: "Black Ops One", system-ui;
+  font-size: 60px;
+  height: 70px;
+  width: 180px;
+  text-align: center;
+  background-color: burlywood;
+  border-color: aqua;
+  margin-bottom: 6px;
+}
+
+.check {
+  font-family: "Black Ops One", system-ui;
+  font-size: 30px;
+  background-color: rgb(134, 131, 131);
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+.div_start {
+  margin-bottom: 8px;
+}
+
+.div_start,
+.div_score {
+  color: black;
+  background-color: rgb(134, 131, 131);
+  padding: 6px;
+  border-radius: 4px;
+  font-size: 25px;
+  font-family: "Black Ops One", system-ui;
+}
+
+/* Mobile screen */
+
+@media (max-width: 640px) {
+  .div_again {
+    padding: 9px 12px;
+    font-size: 20px;
+  }
+
+  .div_number {
+    padding: 7px;
+    font-size: 12px;
+  }
+
+  .div_line {
+    margin: 120px 0px;
+  }
+
+  .div_guess {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 50px;
+    font-family: "Black Ops One", system-ui;
+  }
+
+  .div_question {
+    padding: 26px 32px;
+    background-color: aqua;
+    font-size: 55px;
+    font-family: "Black Ops One", system-ui;
+  }
+
+  .select_and_check_container {
+    padding: 0px;
+  }
+
+  .select_and_check {
+    padding-left: 0px;
+  }
+
+  #guess_num {
+    font-family: "Black Ops One", system-ui;
+    font-size: 40px;
+    height: 50px;
+    width: 100px;
+    text-align: center;
+    background-color: burlywood;
+    border-color: aqua;
+    margin-bottom: 6px;
+  }
+
+  .check {
+    font-family: "Black Ops One", system-ui;
+    font-size: 20px;
+    background-color: rgb(134, 131, 131);
+    padding: 6px 8px;
+    border-radius: 4px;
+  }
+
+  .div_start {
+    margin-bottom: 8px;
+  }
+
+  .div_start,
+  .div_score {
+    color: black;
+    background-color: rgb(134, 131, 131);
+    padding: 6px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-family: "Black Ops One", system-ui;
+  }
+}
+
+/* Tablet screen */
+@media (min-width: 640px) and (max-width: 1024px) {
+  body {
+    color: greenyellow;
+  }
+
+  .select_and_check_container {
+    padding: 0px;
+  }
+
+  .div_line {
+    margin: 120px 0px;
+  }
+}
