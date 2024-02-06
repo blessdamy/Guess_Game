@@ -29,6 +29,7 @@
   font-weight: 400;
   border-radius: 8px;
   font-family: monospace;
+  cursor: pointer;
 }
 
 .div_again:hover {
@@ -85,7 +86,16 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  /* transition:  transform 1.5s;
+  transform: translate(); */
+  /* transform-origin: center; */
+  
+  
 }
+
+/* .div_question:hover {
+  transform: rotate(360deg);
+} */
 
 .select_and_check_container {
   display: flex;
@@ -115,6 +125,7 @@
   background-color: rgb(134, 131, 131);
   padding: 8px 12px;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .div_start {
@@ -125,10 +136,15 @@
 .div_score {
   color: black;
   background-color: rgb(134, 131, 131);
-  padding: 6px;
+  padding: 8px 8px;
   border-radius: 4px;
   font-size: 25px;
   font-family: "Black Ops One", system-ui;
+  border-radius: 8px;
+}
+
+.div_highest_score {
+  padding-top: 8px;
 }
 
 /* Mobile screen */
