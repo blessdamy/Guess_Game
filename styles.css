@@ -7,7 +7,7 @@
 .main_div {
   width: 100%;
   height: 100vh;
-  background-image: url("https://res.cloudinary.com/do3z5k6nk/image/upload/v1706096971/Guessing%20Game/Game2_bpzdnj.webp");
+  background-image: url("https://res.cloudinary.com/do3z5k6nk/image/upload/v1707214614/game2_mywi3c.avif");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -89,8 +89,6 @@
   /* transition:  transform 1.5s;
   transform: translate(); */
   /* transform-origin: center; */
-  
-  
 }
 
 /* .div_question:hover {
