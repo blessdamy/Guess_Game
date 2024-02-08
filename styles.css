@@ -85,15 +85,27 @@
   font-family: "Black Ops One", system-ui;
   top: 50%;
   left: 50%;
+
+  /* use any method based on which one is most convenient */
+
+  /* METHOD ONE...............Using one transform property............. */
   transform: translate(-50%, -50%);
-  /* transition:  transform 1.5s;
-  transform: translate(); */
-  /* transform-origin: center; */
+  transition: transform 1s;
+  transform-origin: center;
+
+  /* METHOD TWO...........using the tansform property values (not using them as functions) without the transform property..I am not sure of cross browser  compatibility yet  */
+  /* translate: -50% -50%;
+ transition:  rotate 1s; */
 }
 
-/* .div_question:hover {
-  transform: rotate(360deg);
-} */
+.div_question:hover {
+  /* ...............Using one transform property............. */
+  /* You will have to re-write previous transform  values because the current one will overide the previous ones and they must be written using one transform property */
+  transform: translate(-50%, -50%) rotate(360deg);
+
+  /* ...........using the tansform property values (not using them as functions) without the transform property  */
+  /* you don't have to re-write previous transform values */
+}
 
 .select_and_check_container {
   display: flex;
